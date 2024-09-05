@@ -121,6 +121,8 @@ hr {
 }
 .section-title {
 	margin-bottom: 70px;
+	text-align: center;
+
 }
 .section-title h2 {
 	position: relative;
@@ -128,11 +130,13 @@ hr {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+	color: #DAA15C !important;
+
 }
 .section-title h2::after {
 	position: absolute;
 	content: "";
-	background-color: #e52f3c;
+	/* background-color: #e52f3c; */
 	height: 3px;
 	width: 50px;
 	bottom: -1px;
@@ -278,6 +282,7 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 100px 0;
+	background-color: #FBF6EF;
 }
 #services .service-media {
 	margin: 10px;
@@ -509,4 +514,84 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+}
+
+.elementor-element{
+	width: 31.5%;
+
+}
+.eco-inner{
+	display: flex;
+
+	flex-wrap: wrap;
+    justify-content: initial;
+    align-items: center;
+    /* align-content: var(--align-content); */
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: auto;
+	gap: 25px;
+    width: 100%;
+    /* max-width: var(--content-width); */
+    margin: 0 auto;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    height: 100%;
+}
+
+.widget-container{
+	border-radius: 10px;
+	overflow: hidden;
+}
+.ele-content{
+	min-height: 700px;
+    text-align: left;
+    padding: 30px;
+    background-color: #FFFFFF;
+	align-content: flex-start;
+    align-items: flex-start;
+	transition: all .4s;
+    width: 100%;
+	justify-content: space-around;
+	position: relative;
+	z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+	display: flex; /* Enables flex layout */
+	flex-direction: column; /* Stacks children vertically */
+	align-items: flex-start;
+}
+.ele-content img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.ele-content:hover{
+	background-color: #DAA15C;
+	color: #fff;
+}
+.content-item{
+	width: 100%;
+	position: relative;
+    transition: .5s;
+    color: black;
+	font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.elementor-cta__image {
+    order: 3;
+    margin: 30px 0 0 !important;
+}
+.heading{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.25em;
+}
+.service-container{
+	padding:  0 150px;
 }
