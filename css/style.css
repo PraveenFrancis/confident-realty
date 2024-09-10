@@ -523,7 +523,7 @@ color: #777;
 .eco-inner{
 	display: flex;
 
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
     justify-content: initial;
     align-items: center;
     /* align-content: var(--align-content); */
@@ -545,7 +545,7 @@ color: #777;
 	overflow: hidden;
 }
 .ele-content{
-	min-height: 700px;
+	min-height: 720px;
     text-align: left;
     padding: 30px;
     background-color: #FFFFFF;
@@ -593,5 +593,23 @@ color: #777;
 	line-height: 1.25em;
 }
 .service-container{
-	padding:  0 150px;
+	padding:  0 72px;
 }
+
+.portfolio-items {
+	display: flex;
+	flex-wrap: wrap; /* Ensures items wrap to the next row only when needed */
+	/* gap: 15px; Adds space between items */
+  }
+  
+  .portfolio-item {
+	flex: 1 1 calc(33.333% - 15px); /* Adjust for three items per row with space */
+	box-sizing: border-box; /* Includes padding and border in width/height */
+  }
+  
+  .img-responsive {
+	width: 100%; /* Full width of the container */
+	height: 250px; /* Set a fixed height for consistency */
+	object-fit: cover; /* Crop the image to fill the space without stretching */
+	border-radius: 8px; /* Optional: Adds rounded corners */
+  }
