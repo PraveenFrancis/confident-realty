@@ -298,7 +298,7 @@ header .intro-text {
 }
 #services h3 {
 	font-weight: 700;
-	padding: 5px 0;
+	/* padding: 5px 0; */
 }
 #services .service-desc hr {
 	margin-left: 0;
@@ -545,7 +545,7 @@ color: #777;
 	overflow: hidden;
 }
 .ele-content{
-	min-height: 720px;
+	min-height: 705px;
     text-align: left;
     padding: 30px;
     background-color: #FFFFFF;
@@ -562,6 +562,7 @@ color: #777;
 	display: flex; /* Enables flex layout */
 	flex-direction: column; /* Stacks children vertically */
 	align-items: flex-start;
+	padding-top: 20px;
 }
 .ele-content img {
     height: auto;
